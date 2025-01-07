@@ -37,43 +37,38 @@
     </nav>
 
     <header class="hero">
-        <h1>Bem-vindo à Celke!</h1>
-        <p>Transforme sua carreira com cursos e alcance novos patamares profissionais.</p>
-        <a href="#" class="btn btn-light btn-lg mt-3">Explore os Cursos</a>
+        <h1>{{ $home->title }}</h1>
+        <p>{{ $home->subtitle }}</p>
+        <a href="{{ $home->link_btn }}" class="btn btn-light btn-lg mt-3">{{ $home->text_btn }}</a>
     </header>
 
     <main class="container my-5">
         <section class="text-center">
-            <h2 class="mb-5">Por Que Fazer Cursos?</h2>
-            <p class="mb-5">O mercado de trabalho está cada vez mais competitivo e em constante transformação.
-                Fazer cursos ajuda você a:</p>
+            <h2 class="mb-5">{{ $home->title_topics }}</h2>
+            <p class="mb-5">{{ $home->subtitle_topics }}</p>
 
             <div class="row mb-4">
                 <div class="col-md-4">
                     <div class="card shadow border-light">
                         <div class="card-body">
-                            <h5 class="card-title mb-3">Atualizar-se</h5>
-                            <p class="card-text">Mantenha-se atualizado com as últimas tendências e tecnologias da sua
-                                área.</p>
+                            <h5 class="card-title mb-3">{{ $home->title_topic_one }}</h5>
+                            <p class="card-text">{{ $home->description_topic_one }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card shadow border-light">
                         <div class="card-body">
-                            <h5 class="card-title mb-3">Diferenciar-se</h5>
-                            <p class="card-text">Adquira habilidades que farão você se destacar no mercado de trabalho.
-                            </p>
+                            <h5 class="card-title mb-3">{{ $home->title_topic_two }}</h5>
+                            <p class="card-text">{{ $home->description_topic_two }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card shadow border-light">
                         <div class="card-body">
-                            <h5 class="card-title mb-3">Alcançar Objetivos</h5>
-                            <p class="card-text">Avance na sua carreira e atinja suas metas profissionais com mais
-                                facilidade.
-                            </p>
+                            <h5 class="card-title mb-3">{{ $home->title_topic_three }}</h5>
+                            <p class="card-text">{{ $home->description_topic_three }}</p>
                         </div>
                     </div>
                 </div>
