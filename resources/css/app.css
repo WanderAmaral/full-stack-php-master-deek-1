@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #07010f;
+}
+
+.navbar a.nav-link {
+    color: white !important;
+    padding: 15px;
+}
+
+.navbar a.nav-link:hover {
+    color: #f0e68c !important;
+}
+
+.hero {
+    background: linear-gradient(90deg, #6b13e5, #4b0082);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1,
+.hero p {
+    color: white;
+}
+
+footer {
+    background-color: #09090a;
+    color: #6b13e5;
+}
