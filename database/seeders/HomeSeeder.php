@@ -17,7 +17,7 @@ class HomeSeeder extends Seeder
         Home::firstOrCreate(
             ['id' => 1],
             [
-                'title' => 'Bem-vindo à Celke!', 
+                'title' => 'Bem-vindo à Xxxxx!', 
                 'subtitle' => 'Transforme sua carreira com cursos e alcance novos patamares profissionais.', 
                 'text_btn' => 'Explore os Cursos',
                 'link_btn' => '#',

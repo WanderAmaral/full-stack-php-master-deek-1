@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
+use App\Models\Contact;
 use App\Models\ContactMessage;
 use App\Models\Home;
 use Illuminate\Http\Request;
@@ -17,9 +19,18 @@ class SiteController extends Controller
         return view('site.home', ['home' => $home]);
     }
 
+    public function about()
+    {
+        $about = About::where('id', 1)->first();
+
+        return view('site.about', ['about' => $about]);
+    }
+
     public function contact()
     {
-        return view('site.contact');
+        $contact = Contact::where('id', 1)->first();
+
+        return view('site.contact', ['contact' => $contact]);
     }
 
     public function send(Request $request)
